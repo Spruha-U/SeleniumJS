@@ -1,0 +1,15 @@
+stages:
+  - test
+
+bdd_tests:
+  image: node:18
+  stage: test
+  before_script:
+    - apt-get update && apt-get install -y chromium
+    - npm ci
+  script:
+    - npm test
+  artifacts:
+    paths:
+      - reports/
+    expire_in: 1 week

@@ -1,0 +1,13 @@
+{
+  "name": "bdd-selenium-cucumber",
+  "version": "1.0.0",
+  "description": "Google search test using Cucumber.js and Selenium",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.0.0",
+    "chai": "^4.3.7",
+    "selenium-webdriver": "^4.15.0"
+  }
+}
